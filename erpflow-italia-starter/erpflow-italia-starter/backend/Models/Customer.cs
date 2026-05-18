@@ -1,0 +1,15 @@
+namespace ERPFlowItalia.Api.Models;
+
+public class Customer
+{
+    public int Id { get; set; }
+    public string CompanyName { get; set; } = string.Empty;
+    public string VatNumber { get; set; } = string.Empty;
+    public string FiscalCode { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string City { get; set; } = string.Empty;
+    public string Province { get; set; } = string.Empty;
+    public string Country { get; set; } = "Italy";
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
+}

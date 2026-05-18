@@ -1,0 +1,49 @@
+<UserControl x:Class="ERPFlowItalia.Desktop.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer>
+        <UniformGrid Columns="3" Rows="2">
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Products" Foreground="#6B7280"/>
+                    <TextBlock x:Name="ProductsText" Text="0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Customers" Foreground="#6B7280"/>
+                    <TextBlock x:Name="CustomersText" Text="0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Orders" Foreground="#6B7280"/>
+                    <TextBlock x:Name="OrdersText" Text="0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Invoices" Foreground="#6B7280"/>
+                    <TextBlock x:Name="InvoicesText" Text="0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Low Stock" Foreground="#6B7280"/>
+                    <TextBlock x:Name="LowStockText" Text="0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
+                <StackPanel>
+                    <TextBlock Text="Sales Total" Foreground="#6B7280"/>
+                    <TextBlock x:Name="SalesText" Text="€0" FontSize="34" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+    </ScrollViewer>
+</UserControl>

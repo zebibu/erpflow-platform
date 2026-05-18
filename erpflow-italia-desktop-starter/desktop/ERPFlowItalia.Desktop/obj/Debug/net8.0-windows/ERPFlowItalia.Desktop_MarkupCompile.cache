@@ -1,0 +1,20 @@
+﻿ERPFlowItalia.Desktop
+
+
+winexe
+C#
+.cs
+C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\
+ERPFlowItalia.Desktop
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\App.xaml
+11-1412374910
+
+251000410338
+19861853843
+MainWindow.xaml;Views\CustomersView.xaml;Views\DashboardView.xaml;Views\InvoicesView.xaml;Views\OrdersView.xaml;Views\PlaceholderView.xaml;Views\ProductsView.xaml;Views\ReportsView.xaml;Views\StockView.xaml;Views\SuppliersView.xaml;Views\WarehousesView.xaml;
+
+False
+

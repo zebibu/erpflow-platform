@@ -1,0 +1,28 @@
+<UserControl x:Class="ERPFlowItalia.Desktop.Views.ReportsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="White" CornerRadius="14" Padding="16" Margin="0,0,0,16">
+            <TextBlock Text="Stock value report from ASP.NET Core API" VerticalAlignment="Center"/>
+        </Border>
+
+        <DataGrid x:Name="ReportsGrid"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Product" Binding="{Binding Product}" Width="*"/>
+                <DataGridTextColumn Header="SKU" Binding="{Binding SKU}" Width="120"/>
+                <DataGridTextColumn Header="Warehouse" Binding="{Binding Warehouse}" Width="180"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
+                <DataGridTextColumn Header="Stock Value" Binding="{Binding StockValue, StringFormat=€{0:N2}}" Width="140"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
