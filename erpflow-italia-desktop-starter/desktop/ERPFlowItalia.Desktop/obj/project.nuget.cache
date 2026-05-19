@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r/VN5A1vSi8=",
+  "dgSpecHash": "pIm9Ed95wZM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zebib\\OneDrive\\Desktop\\ERP PROJECT\\erpflow-italia-desktop-starter\\erpflow-italia-desktop-starter\\desktop\\ERPFlowItalia.Desktop\\ERPFlowItalia.Desktop.csproj",
+  "projectFilePath": "c:\\Users\\zebib\\OneDrive\\Desktop\\k\\erpflow-platform\\erpflow-italia-desktop-starter\\desktop\\ERPFlowItalia.Desktop\\ERPFlowItalia.Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zebib\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\zebib\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",

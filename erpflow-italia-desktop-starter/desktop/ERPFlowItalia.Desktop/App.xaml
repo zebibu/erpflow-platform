@@ -3,30 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="PrimaryBrush" Color="#EAF1FB"/>
-        <SolidColorBrush x:Key="SidebarBorderBrush" Color="#D5E1F2"/>
-        <SolidColorBrush x:Key="SidebarTitleBrush" Color="#12304A"/>
-        <SolidColorBrush x:Key="SidebarTextBrush" Color="#4A6278"/>
-        <SolidColorBrush x:Key="SidebarButtonForegroundBrush" Color="#183B56"/>
-        <SolidColorBrush x:Key="SidebarButtonHoverBrush" Color="#D6E6FA"/>
-        <SolidColorBrush x:Key="SidebarButtonPressedBrush" Color="#C3D9F5"/>
-        <SolidColorBrush x:Key="SidebarButtonActiveBrush" Color="#BFD8FA"/>
-        <SolidColorBrush x:Key="SidebarButtonActiveBorderBrush" Color="#7AA7E8"/>
-        <SolidColorBrush x:Key="SidebarButtonActiveForegroundBrush" Color="#102A43"/>
-        <SolidColorBrush x:Key="SidebarCalloutBrush" Color="#FFFFFF"/>
-        <SolidColorBrush x:Key="AccentBrush" Color="#2563EB"/>
-        <SolidColorBrush x:Key="BackgroundBrush" Color="#F5F7FB"/>
+        <LinearGradientBrush x:Key="BackgroundBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#F4F7F5" Offset="0"/>
+            <GradientStop Color="#E8EEF6" Offset="0.55"/>
+            <GradientStop Color="#F6F0E8" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#102A43"/>
+        <SolidColorBrush x:Key="SidebarBorderBrush" Color="#284B63"/>
+        <SolidColorBrush x:Key="SidebarTitleBrush" Color="#F7FBFC"/>
+        <SolidColorBrush x:Key="SidebarTextBrush" Color="#9FB3C8"/>
+        <SolidColorBrush x:Key="SidebarButtonForegroundBrush" Color="#D9E7F2"/>
+        <SolidColorBrush x:Key="SidebarButtonHoverBrush" Color="#1D3F5C"/>
+        <SolidColorBrush x:Key="SidebarButtonPressedBrush" Color="#244868"/>
+        <SolidColorBrush x:Key="SidebarButtonActiveBrush" Color="#F0B429"/>
+        <SolidColorBrush x:Key="SidebarButtonActiveBorderBrush" Color="#FFD166"/>
+        <SolidColorBrush x:Key="SidebarButtonActiveForegroundBrush" Color="#1F2933"/>
+        <LinearGradientBrush x:Key="SidebarCalloutBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#143652" Offset="0"/>
+            <GradientStop Color="#1D4D72" Offset="1"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="AccentBrush" Color="#F25F3A"/>
+        <SolidColorBrush x:Key="AccentStrongBrush" Color="#D6451F"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#FDFDFB"/>
+        <SolidColorBrush x:Key="SurfaceMutedBrush" Color="#F5F7FA"/>
         <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="CardBorderBrush" Color="#D7E2EA"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#182430"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#61758A"/>
+        <SolidColorBrush x:Key="SuccessBrush" Color="#2D9D78"/>
+        <SolidColorBrush x:Key="WarningBrush" Color="#E9B949"/>
 
-        <Style x:Key="SidebarNavButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="{StaticResource SidebarButtonForegroundBrush}"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderBrush" Value="Transparent"/>
+        <Style TargetType="Window">
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+            <Setter Property="TextOptions.TextFormattingMode" Value="Ideal"/>
+            <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
+        </Style>
+
+        <Style x:Key="CardBorderStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
             <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Padding" Value="14,10"/>
-            <Setter Property="Margin" Value="0,4,0,0"/>
-            <Setter Property="HorizontalContentAlignment" Value="Left"/>
-            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="CornerRadius" Value="24"/>
+            <Setter Property="Padding" Value="24"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+        </Style>
+
+        <Style x:Key="SectionCaptionStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="PrimaryActionButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="18,12"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
@@ -36,7 +71,44 @@
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="12"
+                                CornerRadius="16">
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Root" Property="Background" Value="{StaticResource AccentStrongBrush}"/>
+                                <Setter TargetName="Root" Property="BorderBrush" Value="{StaticResource AccentStrongBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Root" Property="Opacity" Value="0.9"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SidebarNavButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="{StaticResource SidebarButtonForegroundBrush}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16,13"/>
+            <Setter Property="Margin" Value="0,6,0,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Root"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="18"
                                 SnapsToDevicePixels="True">
                             <ContentPresenter Margin="{TemplateBinding Padding}"
                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"

@@ -1,49 +1,151 @@
 <UserControl x:Class="ERPFlowItalia.Desktop.Views.DashboardView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <ScrollViewer>
-        <UniformGrid Columns="3" Rows="2">
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Products" Foreground="#6B7280"/>
-                    <TextBlock x:Name="ProductsText" Text="0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Grid Margin="0,0,0,18">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2.2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Customers" Foreground="#6B7280"/>
-                    <TextBlock x:Name="CustomersText" Text="0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
+                <Border Grid.Column="0"
+                        Style="{StaticResource CardBorderStyle}"
+                        Background="#102A43"
+                        BorderBrush="#214B69"
+                        Margin="0,0,12,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
 
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Orders" Foreground="#6B7280"/>
-                    <TextBlock x:Name="OrdersText" Text="0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
+                        <StackPanel>
+                            <TextBlock Text="OPERATIONS SNAPSHOT"
+                                       Style="{StaticResource SectionCaptionStyle}"
+                                       Foreground="#9FC4E2"/>
+                            <TextBlock Text="One glance for warehouse pressure, revenue movement, and customer demand."
+                                       FontSize="28"
+                                       FontWeight="Bold"
+                                       Foreground="White"
+                                       TextWrapping="Wrap"
+                                       Margin="0,10,0,0"/>
+                            <TextBlock Text="Use the side modules to move from metrics into execution without leaving the desktop workspace."
+                                       Foreground="#DCE8F3"
+                                       Margin="0,12,0,0"
+                                       TextWrapping="Wrap"/>
+                        </StackPanel>
 
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Invoices" Foreground="#6B7280"/>
-                    <TextBlock x:Name="InvoicesText" Text="0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
+                        <Border Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                Background="#F0B429"
+                                CornerRadius="22"
+                                Padding="16">
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="LOW STOCK"
+                                           Style="{StaticResource SectionCaptionStyle}"
+                                           Foreground="#7A4F00"/>
+                                <TextBlock x:Name="LowStockText"
+                                           Text="0"
+                                           FontSize="42"
+                                           FontWeight="Bold"
+                                           Foreground="#1F2933"
+                                           Margin="0,6,0,0"/>
+                                <TextBlock Text="priority items"
+                                           Foreground="#3E4C59"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
 
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Low Stock" Foreground="#6B7280"/>
-                    <TextBlock x:Name="LowStockText" Text="0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
+                <Border Grid.Column="1"
+                        Style="{StaticResource CardBorderStyle}"
+                        Background="#FFF7EE"
+                        BorderBrush="#F3D4BA"
+                        Margin="12,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="SALES TOTAL"
+                                   Style="{StaticResource SectionCaptionStyle}"
+                                   Foreground="{StaticResource AccentStrongBrush}"/>
+                        <TextBlock x:Name="SalesText"
+                                   Text="€0"
+                                   FontSize="38"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                   Margin="0,10,0,0"/>
+                        <TextBlock Text="Current invoiced volume visible across the platform."
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,8,0,0"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
 
-            <Border Background="White" CornerRadius="16" Padding="22" Margin="8">
-                <StackPanel>
-                    <TextBlock Text="Sales Total" Foreground="#6B7280"/>
-                    <TextBlock x:Name="SalesText" Text="€0" FontSize="34" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
-        </UniformGrid>
+            <UniformGrid Columns="2" Margin="0,0,0,18">
+                <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,12,12">
+                    <StackPanel>
+                        <TextBlock Text="CATALOG"
+                                   Style="{StaticResource SectionCaptionStyle}"/>
+                        <TextBlock x:Name="ProductsText"
+                                   Text="0"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                   Margin="0,10,0,0"/>
+                        <TextBlock Text="products indexed across the ERP workspace"
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,8,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}" Margin="12,0,0,12">
+                    <StackPanel>
+                        <TextBlock Text="CUSTOMERS"
+                                   Style="{StaticResource SectionCaptionStyle}"/>
+                        <TextBlock x:Name="CustomersText"
+                                   Text="0"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                   Margin="0,10,0,0"/>
+                        <TextBlock Text="active customer accounts tracked for orders and billing"
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,8,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}" Margin="0,12,12,0" Background="#F8FBF8">
+                    <StackPanel>
+                        <TextBlock Text="ORDERS"
+                                   Style="{StaticResource SectionCaptionStyle}"/>
+                        <TextBlock x:Name="OrdersText"
+                                   Text="0"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                   Margin="0,10,0,0"/>
+                        <TextBlock Text="commercial demand moving through validation and fulfillment"
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,8,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}" Margin="12,12,0,0" Background="#FAF8FD">
+                    <StackPanel>
+                        <TextBlock Text="INVOICES"
+                                   Style="{StaticResource SectionCaptionStyle}"/>
+                        <TextBlock x:Name="InvoicesText"
+                                   Text="0"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                   Margin="0,10,0,0"/>
+                        <TextBlock Text="documents generated from confirmed business activity"
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,8,0,0"/>
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
     </ScrollViewer>
 </UserControl>

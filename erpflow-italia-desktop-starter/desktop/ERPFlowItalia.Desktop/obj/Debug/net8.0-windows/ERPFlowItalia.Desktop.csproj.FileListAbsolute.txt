@@ -38,3 +38,44 @@ C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpfl
 C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\OrdersView.g.cs
 C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\ReportsView.g.cs
 C:\Users\zebib\OneDrive\Desktop\ERP PROJECT\erpflow-italia-desktop-starter\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\SuppliersView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\bin\Debug\net8.0-windows\ERPFlowItalia.Desktop.exe
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\bin\Debug\net8.0-windows\ERPFlowItalia.Desktop.deps.json
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\bin\Debug\net8.0-windows\ERPFlowItalia.Desktop.runtimeconfig.json
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\bin\Debug\net8.0-windows\ERPFlowItalia.Desktop.dll
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\bin\Debug\net8.0-windows\ERPFlowItalia.Desktop.pdb
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\CustomersView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\InvoicesView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\OrdersView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\PlaceholderView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\ProductsView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\ReportsView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\StockView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\SuppliersView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\WarehousesView.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\App.baml
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\CustomersView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\InvoicesView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\OrdersView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\PlaceholderView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\ProductsView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\ReportsView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\StockView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\SuppliersView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\Views\WarehousesView.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop_MarkupCompile.cache
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.g.resources
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.AssemblyInfoInputs.cache
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.AssemblyInfo.cs
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.sourcelink.json
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.dll
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\refint\ERPFlowItalia.Desktop.dll
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.pdb
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ERPFlowItalia.Desktop.genruntimeconfig.cache
+C:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\obj\Debug\net8.0-windows\ref\ERPFlowItalia.Desktop.dll
