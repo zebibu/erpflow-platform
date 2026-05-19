@@ -64,6 +64,28 @@ public class ApiClient
         return false;
     }
 
+    private async Task<TResponse?> TryPostForResponseFromAvailableApisAsync<TRequest, TResponse>(string endpoint, TRequest body)
+    {
+        foreach (var baseAddress in _baseAddresses)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsJsonAsync(new Uri(baseAddress, endpoint), body);
+                var payload = await response.Content.ReadFromJsonAsync<TResponse>();
+                if (payload != null)
+                {
+                    return payload;
+                }
+            }
+            catch
+            {
+                // Try the next local API endpoint.
+            }
+        }
+
+        return default;
+    }
+
     private async Task<bool> TryPostToAvailableApisAsync(string endpoint)
     {
         foreach (var baseAddress in _baseAddresses)
@@ -162,6 +184,11 @@ public class ApiClient
     public async Task<bool> PostAsync<T>(string endpoint, T body)
     {
         return await TryPostToAvailableApisAsync(endpoint, body);
+    }
+
+    public async Task<TResponse?> PostForResponseAsync<TRequest, TResponse>(string endpoint, TRequest body)
+    {
+        return await TryPostForResponseFromAvailableApisAsync<TRequest, TResponse>(endpoint, body);
     }
 
     public async Task<bool> PostAsync(string endpoint)

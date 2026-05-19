@@ -144,17 +144,27 @@
                                 <StackPanel Width="166">
                                     <TextBlock Text="SESSION"
                                                Style="{StaticResource SectionCaptionStyle}"/>
-                                    <TextBlock Text="Desktop ERP"
+                                    <TextBlock x:Name="SessionNameText"
+                                               Text="Desktop ERP"
                                                Foreground="{StaticResource TextPrimaryBrush}"
                                                FontSize="18"
                                                FontWeight="SemiBold"
                                                Margin="0,6,0,0"/>
+                                    <TextBlock x:Name="SessionRoleText"
+                                               Text="Admin"
+                                               Foreground="{StaticResource TextSecondaryBrush}"
+                                               Margin="0,4,0,0"/>
                                 </StackPanel>
                             </Border>
                             <Button Content="Refresh Data"
                                     MinWidth="166"
                                     Style="{StaticResource PrimaryActionButtonStyle}"
                                     Click="Refresh_Click"/>
+                            <Button Content="Sign Out"
+                                    MinWidth="166"
+                                    Margin="0,10,0,0"
+                                    Style="{StaticResource SecondaryActionButtonStyle}"
+                                    Click="SignOut_Click"/>
                         </StackPanel>
                     </Grid>
 

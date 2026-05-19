@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 c:\Users\zebib\OneDrive\Desktop\k\erpflow-platform\erpflow-italia-desktop-starter\desktop\ERPFlowItalia.Desktop\App.xaml
-11-1412374910
+12162606136
 
-251000410338
+30-250724964
 19861853843
-MainWindow.xaml;Views\CustomersView.xaml;Views\DashboardView.xaml;Views\InvoicesView.xaml;Views\OrdersView.xaml;Views\PlaceholderView.xaml;Views\ProductsView.xaml;Views\ReportsView.xaml;Views\StockView.xaml;Views\SuppliersView.xaml;Views\WarehousesView.xaml;
+AuthWindow.xaml;MainWindow.xaml;Views\CustomersView.xaml;Views\DashboardView.xaml;Views\InvoicesView.xaml;Views\OrdersView.xaml;Views\PlaceholderView.xaml;Views\ProductsView.xaml;Views\ReportsView.xaml;Views\StockView.xaml;Views\SuppliersView.xaml;Views\WarehousesView.xaml;
 
 False
 

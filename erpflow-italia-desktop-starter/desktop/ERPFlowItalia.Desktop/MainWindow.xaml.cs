@@ -1,4 +1,5 @@
 using ERPFlowItalia.Desktop.Views;
+using ERPFlowItalia.Desktop.Models;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -7,18 +8,31 @@ namespace ERPFlowItalia.Desktop;
 
 public partial class MainWindow : Window
 {
+    private readonly AuthSession _session;
     private readonly Brush _sidebarButtonForegroundBrush;
     private readonly Brush _sidebarButtonActiveForegroundBrush;
     private readonly Brush _sidebarButtonActiveBrush;
     private readonly Brush _sidebarButtonActiveBorderBrush;
 
-    public MainWindow()
+    public MainWindow() : this(new AuthSession
+    {
+        FullName = "Desktop ERP",
+        Email = "demo@erpflow.local",
+        Role = "Admin"
+    })
+    {
+    }
+
+    public MainWindow(AuthSession session)
     {
         InitializeComponent();
+        _session = session;
         _sidebarButtonForegroundBrush = (Brush)FindResource("SidebarButtonForegroundBrush");
         _sidebarButtonActiveForegroundBrush = (Brush)FindResource("SidebarButtonActiveForegroundBrush");
         _sidebarButtonActiveBrush = (Brush)FindResource("SidebarButtonActiveBrush");
         _sidebarButtonActiveBorderBrush = (Brush)FindResource("SidebarButtonActiveBorderBrush");
+        SessionNameText.Text = _session.FullName;
+        SessionRoleText.Text = $"{_session.Role} · {_session.Email}";
         ShowDashboard();
     }
 
@@ -110,5 +124,13 @@ public partial class MainWindow : Window
         {
             _ = refreshable.RefreshAsync();
         }
+    }
+
+    private void SignOut_Click(object sender, RoutedEventArgs e)
+    {
+        var authWindow = new AuthWindow();
+        Application.Current.MainWindow = authWindow;
+        authWindow.Show();
+        Close();
     }
 }
