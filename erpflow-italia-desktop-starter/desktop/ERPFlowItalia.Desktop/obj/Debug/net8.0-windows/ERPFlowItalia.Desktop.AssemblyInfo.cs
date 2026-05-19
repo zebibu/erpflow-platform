@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERPFlowItalia.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+644c4134b5692d8d4d484102d47a9253f5d86937")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b7b871946b6e27889ff07cb09018d4fb813bbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERPFlowItalia.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERPFlowItalia.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

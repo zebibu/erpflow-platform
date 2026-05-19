@@ -48,33 +48,39 @@
                                        TextWrapping="Wrap"/>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0,28,0,0">
-                            <TextBlock Text="Piattaforma operativa per distributori e PMI italiane" 
-                                       Foreground="White"
-                                       FontSize="36"
-                                       FontWeight="Bold"
-                                       TextWrapping="Wrap"/>
-                            <TextBlock Text="Gestisci anagrafiche, ordini, giacenze, fatture e flussi di magazzino in un'unica postazione desktop con linguaggio e processi coerenti con il contesto italiano."
-                                       Foreground="#DCE8F3"
-                                       Margin="0,18,0,0"
-                                       FontSize="17"
-                                       TextWrapping="Wrap"/>
+                        <ScrollViewer Grid.Row="1"
+                                      Margin="0,28,0,18"
+                                      VerticalScrollBarVisibility="Auto"
+                                      HorizontalScrollBarVisibility="Disabled">
+                            <StackPanel>
+                                <TextBlock Text="Piattaforma operativa per distributori e PMI italiane" 
+                                           Foreground="White"
+                                           FontSize="34"
+                                           FontWeight="Bold"
+                                           TextWrapping="Wrap"/>
+                                <TextBlock Text="Gestisci anagrafiche, ordini, giacenze, fatture e flussi di magazzino in un'unica postazione desktop con linguaggio e processi coerenti con il contesto italiano."
+                                           Foreground="#DCE8F3"
+                                           Margin="0,18,0,0"
+                                           FontSize="17"
+                                           LineHeight="26"
+                                           TextWrapping="Wrap"/>
 
-                            <UniformGrid Columns="1" Margin="0,24,0,0">
-                                <Border Style="{StaticResource CardBorderStyle}" Background="#143652" BorderBrush="#2A597A" Margin="0,0,0,12">
-                                    <StackPanel>
-                                        <TextBlock Text="Accesso ruoli" Style="{StaticResource SectionCaptionStyle}" Foreground="#9FC4E2"/>
-                                        <TextBlock Text="Admin, Manager, Sales Team e Warehouse Worker" Foreground="White" FontSize="18" FontWeight="SemiBold" Margin="0,8,0,0" TextWrapping="Wrap"/>
-                                    </StackPanel>
-                                </Border>
-                                <Border Style="{StaticResource CardBorderStyle}" Background="#143652" BorderBrush="#2A597A">
-                                    <StackPanel>
-                                        <TextBlock Text="Contesto Italia" Style="{StaticResource SectionCaptionStyle}" Foreground="#9FC4E2"/>
-                                        <TextBlock Text="Partita IVA, Codice Fiscale, CAP, province e processi B2B tipici della distribuzione locale" Foreground="White" FontSize="18" FontWeight="SemiBold" Margin="0,8,0,0" TextWrapping="Wrap"/>
-                                    </StackPanel>
-                                </Border>
-                            </UniformGrid>
-                        </StackPanel>
+                                <StackPanel Margin="0,24,0,0">
+                                    <Border Style="{StaticResource CardBorderStyle}" Background="#143652" BorderBrush="#2A597A" Margin="0,0,0,12">
+                                        <StackPanel>
+                                            <TextBlock Text="Accesso ruoli" Style="{StaticResource SectionCaptionStyle}" Foreground="#9FC4E2"/>
+                                            <TextBlock Text="Admin, Manager, Sales Team e Warehouse Worker" Foreground="White" FontSize="18" FontWeight="SemiBold" Margin="0,8,0,0" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border Style="{StaticResource CardBorderStyle}" Background="#143652" BorderBrush="#2A597A">
+                                        <StackPanel>
+                                            <TextBlock Text="Contesto Italia" Style="{StaticResource SectionCaptionStyle}" Foreground="#9FC4E2"/>
+                                            <TextBlock Text="Partita IVA, Codice Fiscale, CAP, province e processi B2B tipici della distribuzione locale" Foreground="White" FontSize="18" FontWeight="SemiBold" Margin="0,8,0,0" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
 
                         <Border Grid.Row="2"
                                 Background="{StaticResource SidebarCalloutBrush}"
