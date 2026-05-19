@@ -7,25 +7,34 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" CornerRadius="14" Padding="16" Margin="0,0,0,16">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Products list from ASP.NET Core API" VerticalAlignment="Center"/>
-                <Button Content="Load Products" Width="140" Margin="20,0,0,0" Click="Load_Click"/>
-            </StackPanel>
+        <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,16">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="CATALOGO ITALIA" Style="{StaticResource SectionCaptionStyle}" Foreground="{StaticResource AccentStrongBrush}"/>
+                    <TextBlock Text="Articoli pronti per listino, magazzino e vendita B2B" FontSize="24" FontWeight="Bold" Foreground="{StaticResource TextPrimaryBrush}" Margin="0,8,0,0"/>
+                    <TextBlock Text="Carica il catalogo centralizzato con SKU, categoria merceologica, prezzo unitario in euro, IVA applicata e scorta minima." Foreground="{StaticResource TextSecondaryBrush}" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <Button Grid.Column="1" Content="Aggiorna catalogo" MinWidth="156" Margin="18,0,0,0" Style="{StaticResource PrimaryActionButtonStyle}" Click="Load_Click"/>
+            </Grid>
         </Border>
 
         <DataGrid x:Name="ProductsGrid"
                   Grid.Row="1"
                   AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  Background="White">
+                  IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="SKU" Binding="{Binding SKU}" Width="120"/>
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
-                <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="160"/>
-                <DataGridTextColumn Header="Unit Price" Binding="{Binding UnitPrice}" Width="120"/>
+                <DataGridTextColumn Header="Descrizione articolo" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Categoria" Binding="{Binding Category}" Width="160"/>
+                <DataGridTextColumn Header="Prezzo unitario" Binding="{Binding UnitPrice, StringFormat=€{0:N2}}" Width="130"/>
                 <DataGridTextColumn Header="VAT %" Binding="{Binding VatRate}" Width="80"/>
-                <DataGridTextColumn Header="Min Stock" Binding="{Binding MinimumStockLevel}" Width="100"/>
+                <DataGridTextColumn Header="Scorta minima" Binding="{Binding MinimumStockLevel}" Width="120"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

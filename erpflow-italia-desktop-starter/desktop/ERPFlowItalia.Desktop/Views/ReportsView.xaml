@@ -7,21 +7,24 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" CornerRadius="14" Padding="16" Margin="0,0,0,16">
-            <TextBlock Text="Stock value report from ASP.NET Core API" VerticalAlignment="Center"/>
+        <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,16">
+            <StackPanel>
+                <TextBlock Text="REPORT DIREZIONALI" Style="{StaticResource SectionCaptionStyle}" Foreground="{StaticResource AccentStrongBrush}"/>
+                <TextBlock Text="Valore di magazzino per analisi finanziaria e operativa" FontSize="24" FontWeight="Bold" Foreground="{StaticResource TextPrimaryBrush}" Margin="0,8,0,0"/>
+                <TextBlock Text="Il report mette in relazione disponibilita, SKU e valore economico per ogni sede logistica." Foreground="{StaticResource TextSecondaryBrush}" Margin="0,10,0,0" TextWrapping="Wrap"/>
+            </StackPanel>
         </Border>
 
         <DataGrid x:Name="ReportsGrid"
                   Grid.Row="1"
                   AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  Background="White">
+                  IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Product" Binding="{Binding Product}" Width="*"/>
+                <DataGridTextColumn Header="Articolo" Binding="{Binding Product}" Width="*"/>
                 <DataGridTextColumn Header="SKU" Binding="{Binding SKU}" Width="120"/>
-                <DataGridTextColumn Header="Warehouse" Binding="{Binding Warehouse}" Width="180"/>
-                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
-                <DataGridTextColumn Header="Stock Value" Binding="{Binding StockValue, StringFormat=€{0:N2}}" Width="140"/>
+                <DataGridTextColumn Header="Magazzino" Binding="{Binding Warehouse}" Width="180"/>
+                <DataGridTextColumn Header="Quantita" Binding="{Binding Quantity}" Width="100"/>
+                <DataGridTextColumn Header="Valore stock" Binding="{Binding StockValue, StringFormat=€{0:N2}}" Width="140"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

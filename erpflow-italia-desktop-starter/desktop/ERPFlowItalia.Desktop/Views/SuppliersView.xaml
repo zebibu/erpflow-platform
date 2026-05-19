@@ -7,41 +7,47 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" CornerRadius="14" Padding="16" Margin="0,0,0,16">
+        <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,16">
             <StackPanel>
-                <TextBlock Text="Supplier details" FontWeight="SemiBold" Margin="0,0,0,12"/>
+                <TextBlock Text="FORNITORI E FILIERA" Style="{StaticResource SectionCaptionStyle}" Foreground="{StaticResource AccentStrongBrush}"/>
+                <TextBlock Text="Anagrafiche fornitore per acquisti, approvvigionamento e contatti di filiale" FontSize="24" FontWeight="Bold" Foreground="{StaticResource TextPrimaryBrush}" Margin="0,8,0,0"/>
+                <TextBlock Text="Usa questa vista per gestire partner italiani ed europei con contatti operativi e riferimenti fiscali." Foreground="{StaticResource TextSecondaryBrush}" Margin="0,10,0,18" TextWrapping="Wrap"/>
 
                 <WrapPanel>
                     <StackPanel Width="240" Margin="0,0,12,12">
-                        <TextBlock Text="Company" Margin="0,0,0,4"/>
+                        <TextBlock Text="Ragione sociale" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="CompanyNameTextBox"/>
                     </StackPanel>
                     <StackPanel Width="180" Margin="0,0,12,12">
-                        <TextBlock Text="VAT Number" Margin="0,0,0,4"/>
+                        <TextBlock Text="Partita IVA" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="VatNumberTextBox"/>
                     </StackPanel>
                     <StackPanel Width="220" Margin="0,0,12,12">
-                        <TextBlock Text="Email" Margin="0,0,0,4"/>
+                        <TextBlock Text="Email acquisti" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="EmailTextBox"/>
                     </StackPanel>
                     <StackPanel Width="160" Margin="0,0,12,12">
-                        <TextBlock Text="Phone" Margin="0,0,0,4"/>
+                        <TextBlock Text="Telefono" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="PhoneTextBox"/>
                     </StackPanel>
                     <StackPanel Width="160" Margin="0,0,12,12">
-                        <TextBlock Text="City" Margin="0,0,0,4"/>
+                        <TextBlock Text="Citta" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="CityTextBox"/>
                     </StackPanel>
+                    <StackPanel Width="100" Margin="0,0,12,12">
+                        <TextBlock Text="Provincia" Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox Text="MI"/>
+                    </StackPanel>
                     <StackPanel Width="140" Margin="0,0,12,12">
-                        <TextBlock Text="Country" Margin="0,0,0,4"/>
+                        <TextBlock Text="Paese" Style="{StaticResource FieldLabelStyle}"/>
                         <TextBox x:Name="CountryTextBox"/>
                     </StackPanel>
                 </WrapPanel>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="New" Width="90" Margin="0,0,8,0" Click="New_Click"/>
-                    <Button Content="Save" Width="90" Margin="0,0,8,0" Click="Save_Click"/>
-                    <Button Content="Delete" Width="90" Click="Delete_Click"/>
+                    <Button Content="Nuovo fornitore" MinWidth="126" Margin="0,0,8,0" Style="{StaticResource SecondaryActionButtonStyle}" Click="New_Click"/>
+                    <Button Content="Salva fornitore" MinWidth="122" Margin="0,0,8,0" Style="{StaticResource PrimaryActionButtonStyle}" Click="Save_Click"/>
+                    <Button Content="Elimina" MinWidth="96" Style="{StaticResource SecondaryActionButtonStyle}" Click="Delete_Click"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -51,15 +57,14 @@
                   AutoGenerateColumns="False"
                   IsReadOnly="True"
                   SelectionMode="Single"
-                  SelectionChanged="SuppliersGrid_SelectionChanged"
-                  Background="White">
+                  SelectionChanged="SuppliersGrid_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Company" Binding="{Binding CompanyName}" Width="*"/>
-                <DataGridTextColumn Header="VAT Number" Binding="{Binding VatNumber}" Width="150"/>
+                <DataGridTextColumn Header="Fornitore" Binding="{Binding CompanyName}" Width="*"/>
+                <DataGridTextColumn Header="Partita IVA" Binding="{Binding VatNumber}" Width="150"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="180"/>
-                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="130"/>
-                <DataGridTextColumn Header="City" Binding="{Binding City}" Width="120"/>
-                <DataGridTextColumn Header="Country" Binding="{Binding Country}" Width="100"/>
+                <DataGridTextColumn Header="Telefono" Binding="{Binding Phone}" Width="130"/>
+                <DataGridTextColumn Header="Citta" Binding="{Binding City}" Width="120"/>
+                <DataGridTextColumn Header="Paese" Binding="{Binding Country}" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

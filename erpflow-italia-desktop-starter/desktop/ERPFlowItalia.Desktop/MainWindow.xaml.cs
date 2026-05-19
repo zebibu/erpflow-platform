@@ -66,42 +66,42 @@ public partial class MainWindow : Window
 
     private void Products_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Products", "Manage products, SKUs, prices, VAT and minimum stock.", new ProductsView(), ProductsButton);
+        SetPage("Products", "Catalogo articoli, listini, IVA e soglie minime per la distribuzione sul territorio italiano.", new ProductsView(), ProductsButton);
     }
 
     private void Warehouses_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Warehouses", "Manage Italian company warehouse locations.", new WarehousesView(), WarehousesButton);
+        SetPage("Warehouses", "Presidi logistici, indirizzi operativi e hub tra Nord, Centro e Sud Italia.", new WarehousesView(), WarehousesButton);
     }
 
     private void Stock_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Stock", "Track current stock, low stock and stock movements.", new StockView(), StockButton);
+        SetPage("Stock", "Giacenze, sotto scorta e disponibilita per magazzino con priorita operative.", new StockView(), StockButton);
     }
 
     private void Orders_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Orders", "Create and confirm customer orders with stock validation.", new OrdersView(), OrdersButton);
+        SetPage("Orders", "Ordini clienti B2B con verifica disponibilita, imponibile, IVA e conferma operativa.", new OrdersView(), OrdersButton);
     }
 
     private void Customers_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Customers", "Manage customers, VAT numbers and company information.", new CustomersView(), CustomersButton);
+        SetPage("Customers", "Anagrafiche clienti con Partita IVA, Codice Fiscale, provincia, CAP e contatti amministrativi.", new CustomersView(), CustomersButton);
     }
 
     private void Suppliers_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Suppliers", "Manage suppliers and product sources.", new SuppliersView(), SuppliersButton);
+        SetPage("Suppliers", "Fornitori, filiera di approvvigionamento e riferimenti per acquisti sul mercato italiano ed EU.", new SuppliersView(), SuppliersButton);
     }
 
     private void Invoices_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Invoices", "Generate and manage invoices from confirmed orders.", new InvoicesView(), InvoicesButton);
+        SetPage("Invoices", "Fatture da ordini confermati con stato pagamento e controllo documentale.", new InvoicesView(), InvoicesButton);
     }
 
     private void Reports_Click(object sender, RoutedEventArgs e)
     {
-        SetPage("Reports", "View sales, stock, invoice and warehouse movement reports.", new ReportsView(), ReportsButton);
+        SetPage("Reports", "Valore stock, performance commerciali e visibilita operativa per direzione e logistica.", new ReportsView(), ReportsButton);
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)

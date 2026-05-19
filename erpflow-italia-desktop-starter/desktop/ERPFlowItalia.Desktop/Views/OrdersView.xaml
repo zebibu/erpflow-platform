@@ -7,43 +7,48 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" CornerRadius="14" Padding="16" Margin="0,0,0,16">
-            <WrapPanel VerticalAlignment="Center">
+        <Border Style="{StaticResource CardBorderStyle}" Margin="0,0,0,16">
+            <StackPanel>
+                <TextBlock Text="ORDINI CLIENTI" Style="{StaticResource SectionCaptionStyle}" Foreground="{StaticResource AccentStrongBrush}"/>
+                <TextBlock Text="Flusso ordine con imponibile, IVA e conferma merce" FontSize="24" FontWeight="Bold" Foreground="{StaticResource TextPrimaryBrush}" Margin="0,8,0,0"/>
+                <TextBlock Text="Crea un ordine selezionando cliente e prodotto, quindi conferma solo dopo la verifica disponibilita a magazzino." Foreground="{StaticResource TextSecondaryBrush}" Margin="0,10,0,18" TextWrapping="Wrap"/>
+
+                <WrapPanel VerticalAlignment="Center">
                 <StackPanel Width="220" Margin="0,0,12,12">
-                    <TextBlock Text="Customer" Margin="0,0,0,4"/>
+                    <TextBlock Text="Cliente" Style="{StaticResource FieldLabelStyle}"/>
                     <ComboBox x:Name="CustomerComboBox" DisplayMemberPath="CompanyName" SelectedValuePath="Id"/>
                 </StackPanel>
                 <StackPanel Width="220" Margin="0,0,12,12">
-                    <TextBlock Text="Product" Margin="0,0,0,4"/>
+                    <TextBlock Text="Articolo" Style="{StaticResource FieldLabelStyle}"/>
                     <ComboBox x:Name="ProductComboBox" DisplayMemberPath="Name" SelectedValuePath="Id"/>
                 </StackPanel>
                 <StackPanel Width="100" Margin="0,0,12,12">
-                    <TextBlock Text="Quantity" Margin="0,0,0,4"/>
+                    <TextBlock Text="Quantita" Style="{StaticResource FieldLabelStyle}"/>
                     <TextBox x:Name="QuantityTextBox" Text="1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20,0,12">
-                    <Button Content="Create Order" Width="120" Margin="0,0,8,0" Click="CreateOrder_Click"/>
-                    <Button Content="Confirm Selected" Width="130" Margin="0,0,8,0" Click="ConfirmSelected_Click"/>
-                    <Button Content="Delete Selected" Width="130" Click="DeleteSelected_Click"/>
+                    <Button Content="Crea ordine" MinWidth="118" Margin="0,0,8,0" Style="{StaticResource PrimaryActionButtonStyle}" Click="CreateOrder_Click"/>
+                    <Button Content="Conferma selezionato" MinWidth="156" Margin="0,0,8,0" Style="{StaticResource SecondaryActionButtonStyle}" Click="ConfirmSelected_Click"/>
+                    <Button Content="Elimina selezionato" MinWidth="148" Style="{StaticResource SecondaryActionButtonStyle}" Click="DeleteSelected_Click"/>
                 </StackPanel>
-            </WrapPanel>
+                </WrapPanel>
+            </StackPanel>
         </Border>
 
         <DataGrid x:Name="OrdersGrid"
                   Grid.Row="1"
                   AutoGenerateColumns="False"
                   IsReadOnly="True"
-                  SelectionMode="Single"
-                  Background="White">
+                  SelectionMode="Single">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Order #" Binding="{Binding OrderNumber}" Width="150"/>
-                <DataGridTextColumn Header="Customer" Binding="{Binding Customer.CompanyName}" Width="*"/>
-                <DataGridTextColumn Header="Date" Binding="{Binding OrderDate, StringFormat=d}" Width="120"/>
-                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120"/>
-                <DataGridTextColumn Header="Items" Binding="{Binding Items.Count}" Width="80"/>
+                <DataGridTextColumn Header="Ordine" Binding="{Binding OrderNumber}" Width="150"/>
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Customer.CompanyName}" Width="*"/>
+                <DataGridTextColumn Header="Data" Binding="{Binding OrderDate, StringFormat=d}" Width="120"/>
+                <DataGridTextColumn Header="Stato" Binding="{Binding Status}" Width="120"/>
+                <DataGridTextColumn Header="Righe" Binding="{Binding Items.Count}" Width="80"/>
                 <DataGridTextColumn Header="Net" Binding="{Binding NetAmount, StringFormat=€{0:N2}}" Width="110"/>
                 <DataGridTextColumn Header="VAT" Binding="{Binding VatAmount, StringFormat=€{0:N2}}" Width="110"/>
-                <DataGridTextColumn Header="Total" Binding="{Binding TotalAmount, StringFormat=€{0:N2}}" Width="120"/>
+                <DataGridTextColumn Header="Totale" Binding="{Binding TotalAmount, StringFormat=€{0:N2}}" Width="120"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
